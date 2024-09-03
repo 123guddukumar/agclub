@@ -1,38 +1,219 @@
-.App {
+/* Header styles */
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  font-size: 2.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  margin: 20px 0;
+  background-color: #0056b3;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
   color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a:hover {
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* SwiperBanner styles */
+.swiper-banner {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.swiper-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Home Links styles */
+.home-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.home-link-item {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.home-link-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-link-item h3 {
+  margin-bottom: 10px;
+}
+
+.home-link-item p {
+  color: #777;
+}
+
+/* WalletStats styles */
+.wallet-stats {
+  background-color: #28a745;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wallet-stats h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.wallet-stats p {
+  font-size: 1.2rem;
+}
+
+/* Notice styles */
+.notice {
+  background-color: #ffc107;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.notice h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.notice p {
+  font-size: 1.1rem;
+}
+
+/* Tasks styles */
+.tasks {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.tasks h3 {
+  margin-bottom: 10px;
+}
+
+.task-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Events styles */
+.events {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.events h3 {
+  margin-bottom: 15px;
+}
+
+.event-item {
+  padding: 10px;
+  border-bottom: 1px solid #495057;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #212529;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* LanguageSelector styles */
+.language-selector {
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.language-selector select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .home-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tasks,
+  .events,
+  .wallet-stats,
+  .notice {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 5px 0;
+  }
+
+  .swiper-banner img {
+    border-radius: 0;
   }
 }

@@ -1,0 +1,12 @@
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.language-selector select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
