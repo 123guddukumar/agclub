@@ -90,7 +90,7 @@ function Home() {
                         <div className="home-task-name">Government Subsidies</div>
                         <ul>
                             <li>
-                                <h3>0 / 2</h3>
+                                <h3>0 / 1</h3>
                                 <span>Valid Invite</span>
                             </li>
                             <li>
